@@ -1,0 +1,1 @@
+$(document).ready(function(){	$("#colors li").each(function() {		var color = $(this).html();		var lightness = $.Color(color).lightness();		if (lightness < 0.4)			$(this).css('color', 'rgb(255,255,255)');		$(this).css('backgroundColor', color);		console.log(lightness);	});});
